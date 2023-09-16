@@ -5,15 +5,16 @@ namespace DataGenerator.Model
     public class Meter
     {
         public int MID { get; set; }
-        public double PowerUsed { get; set; }
         public int AID { get; set; }
+        public double PowerUsed { get; set; }
         public DateTime Timestamp { get; set; }
+        public int ReadingID { get; set; }
 
         public Meter()
         {
         }
 
-        public Meter(int apartID, double powerUsed, int communityId, DateTime timeStamp)
+        public Meter(int apartID, double powerUsed, DateTime timeStamp)
         {
             AID = apartID++;
             PowerUsed = powerUsed;
