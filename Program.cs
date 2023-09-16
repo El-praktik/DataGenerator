@@ -50,7 +50,7 @@ for (int apartmentId = 1; apartmentId <= totalApartments; apartmentId++)
             command.Parameters.Add("@Timestamp", SqlDbType.DateTime).Value = meter.Timestamp;
 
             int rowsAffected = command.ExecuteNonQuery();
-            Console.WriteLine($"{rowsAffected} row(s) inserted for MID: {meter.MID}, AID: {meter.AID}, hour {meter.Timestamp}");
+            Console.WriteLine($"{rowsAffected} row(s) inserted for MID: {meter.MID}, AID: {meter.AID}, Timestamp: {meter.Timestamp}");
         }
     }
 }
